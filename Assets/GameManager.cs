@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
         {
             Instance = this;
         }
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         inputManager.OnSettingsMenu.AddListener(ToggleSettingsMenu);
         // The game starts with the settings menu disabled
         DisableSettingsMenu();
