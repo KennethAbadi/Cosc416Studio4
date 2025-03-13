@@ -90,4 +90,8 @@ public class PlayerController : MonoBehaviour
             jumpCount = 0;
         }
     }
+    public void UpdatePlayerMaxSpeed(float speed)
+    {
+        moveSpeed = speed;
+    }
 }
